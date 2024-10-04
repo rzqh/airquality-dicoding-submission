@@ -1,7 +1,7 @@
 # Proyek Analisis Data: Air Quality @Wanliu
 
 ## Live Dashboard
-blom deploy
+[Klik di sini!](https://rzqh-airquality-dicoding-submission.streamlit.app/)
 
 ## Project Overview
 Dashboard ini menyajikan analisa data kualitas udara, terutama pada tingkat PM2.5 dari stasiun Wanliu. Project ini bertujuan untuk mengungkap berbagai insight seperti dinamika, variasi musiman dan dampak berbagai kondisi cuaca terhadap kualitas udara. Insight dari analisis ini dapat bermanfaat untuk studi lingkungan dan pemantauan kesehatan pasyarakat
