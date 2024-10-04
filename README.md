@@ -11,9 +11,14 @@ Untuk menjalankan Air Quality Analysis Dashboard, ikuti step berikut:
 ### Setup Environment 
 ```
 python -m venv venv-airquality
-source venv-airquality/bin/activate # Jika menggunakan Mac/Linux
-`venv-airquality/Scripts/activate # Jika menggunakana Windows
-
+```
+Jika menggunakan Mac/Linux
+```
+source venv-airquality/bin/activate
+```
+Jika menggunakan Windows
+```
+venv-airquality/Scripts/activate
 ```
 
 ### Setup Environment - Shell/Terminal
