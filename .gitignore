@@ -8,3 +8,6 @@ venv-airquality/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# ini apa coba
+.DS_Store
