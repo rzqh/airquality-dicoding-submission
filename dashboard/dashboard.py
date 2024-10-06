@@ -32,8 +32,8 @@ Dashboard ini menyajikan analisa data kualitas udara, terutama pada tingkat PM2.
 # pertanyaan analisis
 st.markdown("""
 ### Pertanyaan Analisis
-1. Apakah ada korelasi antara kadar PM2.5 dengan berbagai kondisi cuaca serta berbagai polutan udara lainnya(PM10 & CO) di Stasiun Wanliu?
-2. Bagaimana tren atau pola yang terlihat pada tingkatan kadar PM2.5 setiap tahunnya di Stasiun Wanliu?        
+1. Apakah ada korelasi antara kadar PM2.5 dengan berbagai kondisi cuaca serta berbagai polutan udara lainnya (PM10 & CO) di Stasiun Wanliu dalam kurun tahun 2013 hingga 2017?
+2. Bagaimana tren atau pola kadar PM2.5 setiap tahunnya di Stasiun Wanliu dari tahun 2013 hingga 2017?        
 """)
 
 # sidebar untuk fitur slicer 
@@ -78,7 +78,7 @@ plt.legend()
 st.pyplot(fig)
 
 # Conclusion
-st.subheader('Kesimpulan Wajib')
+st.subheader('Kesimpulan')
 st.write("""
 1. Berdasarkan korelasi negatif antara tingkatan PM2.5 dengan tingkatan suhu, menunjukkan tingkat polusi yang lebih tinggi pada cuaca yang lebih dingin. Lalu ditemukan pula korelasi positif dengan kadar PM10 dan CO yang ternyata saling berhubungan karena bersumber dari beberapa emisi yang sama.
 2. Line chart Tingkatan Rata-Rata PM2.5 dan PM10 per tahun menunjukkan tren antara PM2.5 dan PM10 pada 2013-2017. 
