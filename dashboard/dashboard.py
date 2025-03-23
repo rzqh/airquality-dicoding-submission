@@ -37,7 +37,7 @@ st.markdown("""
 """)
 
 # sidebar untuk fitur slicer 
-st.sidebar.header('Fitur slicer')
+st.sidebar.header('Slicer')
 
 default_year = 2015
 default_month = 6
