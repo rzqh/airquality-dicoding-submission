@@ -39,17 +39,21 @@ st.markdown("""
 # sidebar untuk fitur slicer 
 st.sidebar.header('Slicer')
 
-default_year = 2015
-default_month = 6
-years = list(data['year'].unique())
-months = list(data['month'].unique())
-default_year_index = years.index(default_year)
-default_month_index = months.index(default_month)
-selected_year = st.sidebar.selectbox('Tahun', years, index=default_year_index)
-selected_month = st.sidebar.selectbox('Bulan', months, index=default_month_index)
+# Convert 'year', 'month', and 'day' columns to a single datetime column
+data['date'] = pd.to_datetime(data[['day', 'month', 'year']])
 
-# filter data based on tahun dan bulan
-data_filtered = data[(data['year'] == selected_year) & (data['month'] == selected_month)].copy()
+# Date range selector
+default_start_date = pd.Timestamp('2015-06-01')
+default_end_date = pd.Timestamp('2015-06-30')
+date_range = st.sidebar.date_input(
+    "Pilih Rentang Tanggal",
+    [default_start_date, default_end_date],
+    min_value=data['date'].min(),
+    max_value=data['date'].max()
+)
+
+# Filter data based on selected date range
+data_filtered = data[(data['date'] >= pd.Timestamp(date_range[0])) & (data['date'] <= pd.Timestamp(date_range[1]))].copy()
 
 # matrix data stats
 st.subheader('Data Overview')
